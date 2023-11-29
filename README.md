@@ -1,9 +1,12 @@
 # Practice-API-project
+
+Togol and Navesection
 ![Screenshot 2023-11-29 184422](https://github.com/mahmudul7608/Practice-API-project/assets/146390183/71750381-9b46-41b1-9006-c048aba06ed2)
 
-
+Togol Nave section and sign up section
 ![Screenshot 2023-11-29 184442](https://github.com/mahmudul7608/Practice-API-project/assets/146390183/9e5db6de-7bd6-4fd0-bd52-cd38cef2728e)
 
+Search anythink on search section then you will get thets related pictur's..
 ![Screenshot 2023-11-29 184544](https://github.com/mahmudul7608/Practice-API-project/assets/146390183/99bf6a5f-426f-4763-873b-370ce2738af6)
 
 This is My Toggle nav-bar and API search Image's project
