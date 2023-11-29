@@ -13,15 +13,16 @@
 
     <link rel="stylesheet" href="style.css" />
 
-    <title>My landing Page</title>
+    <title>Practice medium project</title>
   </head>
   <body>
+    
+<!-- nav/Togol section start -->
+
     <nav>
+      <br>
       <div class="logo">
-        <img
-          src="./img/313189029_5795882690471051_2396997356185167289_n.jpg"
-          alt="user"
-        />
+        <img src="./image/profile_n.jpg" alt="user" />
 
         <ul>
           <li><a href="#">Home</a></li>
@@ -32,108 +33,45 @@
       </div>
     </nav>
 
+    <!-- nav/Togol section end -->
+
+    <!-- Header section start -->
+
     <header>
-      <button class="toggle" id="toggleNav">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-      
-      <button class="toggle" id="toggleModal">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-      <div class="auth-buttons">
-        <button id="loginBtn">Log In</button>
-        <button id="signupBtn">Sign Up</button>
-      </div>
-    </header>
-  
-    <!-- ... existing modal code ... -->
-  
-    <div class="login-modal-container" id="loginModal">
-      <div class="modal">
-        <button class="close-btn" id="closeLogin">
-          <i class="fa-solid fa-xmark"></i>
+      <div class="header-container">
+        <h1>Image search engine</h1>
+
+        <button id="toggle" class="toggle">
+          <i class="fa-solid fa-bars"></i>
         </button>
-        <div class="modal-header">
-          <h3>Login</h3>
-        </div>
-        <div class="modal-content">
-          <p>Enter your username and password to log in</p>
-          <form class="modal-form" id="loginForm">
-            <!-- Add login form fields here -->
-            <div>
-              <label for="username">Username</label>
-              <input
-                type="text"
-                id="username"
-                placeholder="Enter Username"
-                class="from-input"
-              />
-            </div>
-            <div>
-              <label for="password">Password</label>
-              <input
-                type="password"
-                id="loginPassword"
-                placeholder="Enter password"
-                class="from-input"
-              />
-            </div>
-            <input type="submit" value="Log In" class="submit-btn" />
-          </form>
-        </div>
+        <button class="cta-btn" id="open">Sine Up</button>
       </div>
-    </div>
-  
-    <div class="signup-modal-container" id="signupModal">
-      <div class="modal">
-        <button class="close-btn" id="closeSignup">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-        <div class="modal-header">
-          <h3>Sign up</h3>
-        </div>
-        <div class="modal-content">
-          <p>Register with us to get offers, support, and more</p>
-          <form class="modal-form" id="signupForm">
-            <!-- Add signup form fields here -->
-            <div>
-              <label for="name">Name</label>
-              <input type="text" id="username" placeholder="Enter Username" class="form-input" />
-            </div>
-            <div>
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="signupEmail"
-                placeholder="Enter email"
-                class="from-input"
-              />
-            </div>
-            <div>
-              <label for="password">Password</label>
-              <input
-                type="password"
-                id="signupPassword"
-                placeholder="Enter password"
-                class="from-input"
-              />
-            </div>
-            <div>
-              <label for="password2">Confirm Password</label>
-              <input
-                type="password"
-                id="signupPassword2"
-                placeholder="Confirm Password"
-                class="from-input"
-              />
-            </div>
-            <input type="submit" value="Sign Up" class="submit-btn" />
-          </form>
-        </div>
-      </div>
-    </div>
+      <br>
     </header>
 
+      <!-- Header section End -->
+
+      <!-- Search API section start -->
+
+      <form id="search-form">
+        <input
+          type="text"
+          id="search-box"
+          placeholder="Search anything here..."
+        />
+        <button>Search</button>
+      </form>
+  
+      <!-- Form section end -->
+  
+      <div id="search-result"></div>
+      <button id="show-more-btn">Show more</button>
+
+
+      <!-- Search API section end -->
+
+
+        <!-- Sign up model -->
 
     <div class="modal-container" id="modal">
       <div class="modal">
@@ -189,6 +127,10 @@
         </div>
       </div>
     </div>
+
+    <!-- Sign up model end -->
+
+
     <script src="script.js"></script>
   </body>
 </html>

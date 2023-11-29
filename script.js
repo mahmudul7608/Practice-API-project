@@ -1,29 +1,28 @@
-const toggleNav = document.getElementById("toggleNav");
-const toggleModal = document.getElementById("toggleModal");
+const toggle = document.getElementById("toggle");
 const close = document.getElementById("close");
-const loginBtn = document.getElementById("loginBtn");
-const signupBtn = document.getElementById("signupBtn");
-const loginModal = document.getElementById("loginModal");
-const signupModal = document.getElementById("signupModal");
+const open = document.getElementById("open");
+const model = document.getElementById("model");
 
+//  toggle nav
 
+toggle.addEventListener("click", () =>
+  document.body.classList.toggle("show-nav")
+);
 
-toggle.addEventListener("click", () => document.body.classList.toggle("show-nav"));
+// sho modal
 
+open.addEventListener("click", () => modal.classList.add("show-modal"));
 
-loginBtn.addEventListener("click", () => loginModal.classList.add("show-modal"));
+// Hide modal
 
+close.addEventListener("click", () => modal.classList.remove("show-modal"));
 
-signupBtn.addEventListener("click", () => signupModal.classList.add("show-modal"));
+// Hide modal on outside click
 
+window.addEventListener("click", (e) =>
+  e.target == modal ? classList.remove("show-modal") : false
+);
 
-document.getElementById("closeLogin").addEventListener("click", () => loginModal.classList.remove("show-modal"));
+// search / API section start
 
-
-document.getElementById("closeSignup").addEventListener("click", () => signupModal.classList.remove("show-modal"));
-
-
-window.addEventListener("click", (e) => {
-  if (e.target == loginModal) loginModal.classList.remove("show-modal");
-  if (e.target == signupModal) signupModal.classList.remove("show-modal");
-});
+// search / API section end
