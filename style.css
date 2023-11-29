@@ -111,10 +111,33 @@ button:focus {
   left: 20px;
 }
 
-.ctn-btn {
+.cta-btn {
   padding: 12px 30px;
   font-size: 20px;
 }
+form button {
+  padding: 7px 13px;
+  height: 100%;
+  background: #ff3929;
+  color: #fff;
+  font-size: 18px;
+  border: 0;
+  outline: 0;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  cursor: pointer;
+}
+form input {
+  flex: 1;
+  height: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 18px;
+  padding: 5px 10px; /* Adjust the padding values as needed */
+}
+
 .container {
   padding: 15px;
   margin: 0 auto;
@@ -187,13 +210,14 @@ button:focus {
 }
 
 @keyframes modalopen {
-  form {
+  from {
     opacity: 0;
   }
   to {
     opacity: 1;
   }
 }
+
 /* sign up section end */
 
 /* Search img section start */
